@@ -1,4 +1,8 @@
 function countRegNumber (regNo){
-  var list = regNo.split(',');
-  return list.length;
+  if(regNo === ""){
+    return 0;
+  } else {
+      var list = regNo.split(',');
+      return list.length;
+  }
 }

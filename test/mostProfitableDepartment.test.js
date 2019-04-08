@@ -38,5 +38,6 @@ describe('mostProfitableDepartment' , function(){
     {"department":"steelwork","sales":1500,"day":"Wednesday"},
     {"department":"carpentry","sales":8009,"day":"Wednesday"}
 ]), 'electronics');
+        assert.deepEqual(mostProfitableDepartment([]),'');
     });
 });

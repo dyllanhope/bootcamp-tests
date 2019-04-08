@@ -6,7 +6,7 @@ function totalPhoneBill(data) {
   	for (var i=0;i<cellData.length;i++){
       	if(cellData[i] === "call"){
            callCount++;
-        }else{
+        }else if(cellData[i]==="sms"){
           smsCount++;
         }
     }

@@ -3,5 +3,6 @@ describe('totalPhoneBill' , function(){
         assert.equal(totalPhoneBill('call, sms, call, sms, sms'),'R7.45');
         assert.equal(totalPhoneBill('call, sms'),'R3.40');
         assert.equal(totalPhoneBill('sms, sms'),'R1.30');
+        assert.equal(totalPhoneBill(''),'R0.00');
     });
 });

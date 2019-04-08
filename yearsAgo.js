@@ -1,5 +1,10 @@
 function yearsAgo (year) {
   var d = new Date();
+  var dif ;
   var currentYear = d.getFullYear();
-  return currentYear-year;
+  if (currentYear > year){
+    return currentYear - year;
+  } else{
+    return "not possible";
+  }
 }
