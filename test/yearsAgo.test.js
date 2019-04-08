@@ -1,8 +1,11 @@
 describe('yearsAgo' , function(){
-    it('Should return correctly with the difference between the current year and entered year' , function(){
+    it('Should return 19 with the entered year being 2000' , function(){
         assert.equal(yearsAgo(2000), 19);
-        assert.equal(yearsAgo(2017),2);
-        assert.equal(yearsAgo(2020),"not possible")
     });
-
+    it('Should return 2 with the entered year being 2017' , function(){
+        assert.equal(yearsAgo(2017),2);
+    });
+    it('Should return "not possible" as the year 2200 has not occured yet' , function(){
+        assert.equal(yearsAgo(2200),"not possible")
+    });
 });
