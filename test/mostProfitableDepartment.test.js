@@ -1,5 +1,5 @@
 describe('mostProfitableDepartment' , function(){
-    it('Tests the mostProfitableDepartment function' , function(){
+    it('Should retun the most profitable department as outdoor' , function(){
         assert.deepEqual(mostProfitableDepartment([
     {department: 'hardware', sales: 4500, day: 'Monday'},
     {department: 'outdoor', sales: 1500, day: 'Monday'},

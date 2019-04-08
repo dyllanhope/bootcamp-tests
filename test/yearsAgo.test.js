@@ -1,5 +1,5 @@
 describe('yearsAgo' , function(){
-    it('Tests the yearsAgo function' , function(){
+    it('Should return correctly with 19' , function(){
         assert.equal(yearsAgo(2000), 19);
     });
 

@@ -1,5 +1,5 @@
 describe('fromWhere' , function(){
-    it('Tests the fromWhere function' , function(){
+    it('Should return Cape Town' , function(){
         assert.equal(fromWhere('CA'), 'Cape Town');
     });
 

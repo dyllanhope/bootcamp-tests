@@ -1,5 +1,5 @@
 describe('regCheck' , function(){
-    it('Tests the regCheck function' , function(){
+    it('Should return false' , function(){
         assert.equal(regCheck("CY1234","CY"),false);
     });
 

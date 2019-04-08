@@ -1,5 +1,5 @@
 describe('Greet' , function(){
-    it('Tests the greet function' , function(){
+    it('Should return Hello, Dyllan' , function(){
         assert.equal(greet("Dyllan"),"Hello, Dyllan");
     });
 });

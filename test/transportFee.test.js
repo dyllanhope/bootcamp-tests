@@ -1,5 +1,5 @@
 describe('transportFee' , function(){
-    it('Tests the transportFee function' , function(){
+    it('should return correctly with R20' , function(){
         assert.equal(transportFee('morning'),'R20');
     });
 
