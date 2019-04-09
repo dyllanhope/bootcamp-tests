@@ -1,5 +1,5 @@
 describe('mostProfitableDepartment' , function(){
-    it('Should retun the most profitable department correctly according to the data entered' , function(){
+    it('Should return "outdoor" according to the data entered' , function(){
         assert.deepEqual(mostProfitableDepartment([
     {"department": 'hardware', "sales": 4500, "day": 'Monday'},
     {"department": 'outdoor', "sales": 1500, "day": 'Monday'},
@@ -17,6 +17,8 @@ describe('mostProfitableDepartment' , function(){
     {"department": 'outdoor', "sales": 12006, "day": 'Friday'},
     {"department": 'carpentry', "sales": 16109, "day": 'Friday'}
 ]), 'outdoor');
+    });
+    it('Should return "electronics" according to the data entered' , function(){
         assert.deepEqual(mostProfitableDepartment([
     {"department":"electronics","sales":4500,"day":"Monday"},
     {"department":"outdoor","sales":1500,"day":"Monday"},
@@ -38,6 +40,8 @@ describe('mostProfitableDepartment' , function(){
     {"department":"steelwork","sales":1500,"day":"Wednesday"},
     {"department":"carpentry","sales":8009,"day":"Wednesday"}
 ]), 'electronics');
+    });
+    it('Should return an empty object, as no data was entered' , function(){
         assert.deepEqual(mostProfitableDepartment([]),'');
     });
 });
